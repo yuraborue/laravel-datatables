@@ -165,7 +165,7 @@ class QueryBuilderEngine extends BaseEngine
                                     $queryBuilder,
                                     $relation,
                                     $relationColumn,
-                                    $globalKeyword
+                                    '%'.$globalKeyword.'%'
                                 );
                             } else {
                                 $this->compileQuerySearch($queryBuilder, $columnName, $globalKeyword);
